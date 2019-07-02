@@ -1,5 +1,5 @@
 # periods_validator
-
+[![Build Status](https://travis-ci.org/jponferrada26/periods_validator.svg?branch=master)](https://travis-ci.org/jponferrada26/periods_validator)
 #### Gem used to validate periods between a range of dates.
 
 The periods allowed are the following:
