@@ -2,7 +2,10 @@ ENV['RAILS_ENV'] ||= 'test'
 
 require 'bundler/setup'
 
-require 'periods_validator'
+require 'periods_validator/periods'
+
+require 'active_support'
+require 'active_support/core_ext'
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate

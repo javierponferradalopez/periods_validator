@@ -18,7 +18,7 @@ module PeriodsValidator
         periods: @periods
       }
 
-      validator = Periods::Period.new(options)
+      validator = PeriodsValidator::Periods.new(options)
 
       return if validator.valid?
 

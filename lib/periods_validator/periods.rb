@@ -1,14 +1,13 @@
 module PeriodsValidator
-  class Period
+  class Periods
     attr_reader :error
 
-    # mensual, trimestral, semestral, anual
-    PERIODS = %i[monthly quarterly biyearly yearly].freeze
+    PERIODS = %i[monthly quarterly semesterly yearly].freeze
     MONTHS_QUARTERLY = [3, 6, 9, 12].freeze
-    MONTHS_BIYEARLY = [6, 12].freeze
+    MONTHS_SEMESTERLY = [6, 12].freeze
     YEARLY = 11
     QUARTERLY = 2
-    BIYEARLY = 5
+    SEMESTERLY = 5
 
     def initialize(args={})
       @start_range = args.fetch(:start_range)
@@ -56,8 +55,8 @@ module PeriodsValidator
       limits_date && @months == QUARTERLY && MONTHS_QUARTERLY.include?(@end_range.month)
     end
 
-    def period_biyearly
-      limits_date && @months == BIYEARLY && MONTHS_BIYEARLY.include?(@end_range.month)
+    def period_semesterly
+      limits_date && @months == SEMESTERLY && MONTHS_SEMESTERLY.include?(@end_range.month)
     end
 
     def period_yearly
