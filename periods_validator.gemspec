@@ -24,5 +24,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'bundler'
   spec.add_development_dependency 'pry-byebug'
   spec.add_development_dependency 'rspec'
-  spec.add_dependency 'activerecord', ['>= 3.0', '< 5.3']
+  spec.add_dependency 'activemodel', ['>= 3.0', '< 5.3']
 end

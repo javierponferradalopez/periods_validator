@@ -25,3 +25,7 @@ end
 appraise 'rails-5.2' do
     gem 'activemodel', '~> 5.2.0'
 end
+
+appraise 'rails-5.2.3' do
+    gem 'activemodel', '~> 5.2.3'
+end
