@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
   spec.description   = 'Validates periods between two date ranges'
   spec.homepage      = ''
   spec.license       = 'MIT'
+  spec.metadata      = {'source_code_uri' => 'https://github.com/jponferrada26/periods_validator'}
 
   spec.files         = `git ls-files -z`.split("\x0")
   spec.executables   = spec.files.grep(%r{^bin/}) { |f| File.basename(f) }
